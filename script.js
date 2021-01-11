@@ -1,7 +1,7 @@
 //alert("yooo"); testing my js is working or not
 //console.log(dayjs())
 //console.log(dayjs().format("dddd, MMMM D YYYY " + "h mm A"));
-//console.log(dayjs().format("h"))
+console.log(dayjs().format("h"))
 var today = $("#currentDay")
 
 $(document).ready(function(){//getting ready to load document which is html and css.
@@ -10,14 +10,11 @@ $(document).ready(function(){//getting ready to load document which is html and 
   //add click listener for user input and time stamp
   $(".saveBtn").on("click",function(){
     //get value
-    var text = $(this).siblings("discription").val();
+    var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
     // storing the given value by set item in local storage!
     localStorage.setItem(time, text);
-
-    
-
   })
 
   //load all saved data from localStorage for each hour created.
@@ -35,13 +32,13 @@ $(document).ready(function(){//getting ready to load document which is html and 
   function myHourTracker(){
 
     //get current number of nhours
-    var currentHour =  (dayjs().hour());
+    var currentHour =  dayjs().hour();
 
     //looping the time blooks.
     $(".time-block").each(function(){
       var blockHour = parseInt($(this).attr("id").split("hour")[1]);
 
-      //console.log(blockHour, currentHour)
+      console.log(blockHour, currentHour)
       //checking if we have moved past this time.
       if (blockHour < currentHour){
         $(this).addClass("past");//white color
@@ -65,6 +62,7 @@ $(document).ready(function(){//getting ready to load document which is html and 
     })
 
   }
+  myHourTracker();// calling function
 
   
   
