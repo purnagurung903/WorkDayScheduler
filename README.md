@@ -20,5 +20,6 @@ WHEN I refresh the page
 THEN the saved events persist
 
 # Please visit deployed project at:
+ https://purnagurung903.github.io/WorkDayScheduler/.
 # app screenshot
 https://github.com/purnagurung903/WorkDayScheduler/issues/1#issue-761474694https://github.com/purnagurung903/WorkDayScheduler/issues/1#issue-761474694
