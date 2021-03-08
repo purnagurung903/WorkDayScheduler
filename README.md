@@ -1,4 +1,6 @@
 # Work Day Scheduler HW#5
+<img width="1440" alt="Screen Shot 2021-03-08 at 11 30 16 AM" src="https://user-images.githubusercontent.com/69695368/110350428-b41c2c80-8001-11eb-8c10-8d8e4e1eaced.png">
+
 # Installation
 This is a simple calender  application that will run in the browser and feature dynamically updated HTML and CSS powered by JQuery. I used Day.js to work with dates and times.
 # Usage
@@ -21,5 +23,3 @@ THEN the saved events persist
 
 # Please visit deployed project at:
  https://purnagurung903.github.io/WorkDayScheduler/.
-# app screenshot
-https://github.com/purnagurung903/WorkDayScheduler/issues/1#issue-761474694https://github.com/purnagurung903/WorkDayScheduler/issues/1#issue-761474694
